@@ -18,7 +18,7 @@ vector<int> insert(vector<int> v){
 }
 
 int main() {
-	// your code goes here
+// your code goes here
     vector<int>v;
     vector<int> v1=insert(v);
     print(v1);
@@ -43,6 +43,6 @@ int main() {
     cout<<"size of vector is:"<<v1.size()<<endl;
     cout<<"capacity of vector is:"<<v1.capacity();
 // only element values are deleted not allocated memory by clear() function.
-	return 0;
+return 0;
 }
 
