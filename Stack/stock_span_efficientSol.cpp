@@ -14,14 +14,15 @@ vector<int> stockSpanner(vector<int> &stocks){
 	    
         while(stocks[i]>=stocks[s.top()] && !s.empty())
             s.pop();
+		
         if(s.empty())
             span[i]=i-prev_idx+1;
             
-        else{
+        else
             span[i]=i-s.top();
-            prev_idx=s.top();
-            s.push(i);
-        }
+            
+        s.push(i);
+        prev_idx=s.top();
 	    
 	}
 	
